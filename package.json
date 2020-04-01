@@ -1,7 +1,7 @@
 {
   "name": "emotion-sanitize",
   "description": "Sanitize.css ready to be used with Emotion CSS-in-JS API.",
-  "version": "0.0.0",
+  "version": "11.0.0",
   "main": "build/index.js",
   "module": "build/esm/index.js",
   "types": "build/index.d.ts",

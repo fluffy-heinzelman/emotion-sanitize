@@ -6,6 +6,7 @@
   "module": "build/esm/index.js",
   "types": "build/index.d.ts",
   "repository": "git@gitlab.com:fluffy-heinzelman/emotion-sanitize.git",
+  "homepage": "https://gitlab.com/fluffy-heinzelman/emotion-sanitize",
   "author": "Micha Meyer <heinzelman.code@gmail.com>",
   "license": "MIT",
   "private": false,

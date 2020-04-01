@@ -69,7 +69,9 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 
 ## Version
 
-Versions match `sanitize.css` versions.
+Major and minor versions of `emotion-sanitize` correspond to the major and minor versions of `sanitize.css`.
+
+Patch level reflects updates to `emotion-sanitize`.
 
 ## License
 

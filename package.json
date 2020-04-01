@@ -26,7 +26,6 @@
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --extensions '.ts,.tsx' --out-dir ./build",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --extensions '.ts,.tsx' --out-dir ./build/esm",
     "postbuild": "tsc -p ./tsconfig.declaration.json",
-    "preversion": "yarn run update && yarn run transform && yarn run build",
     "postversion": "git push origin master --tags && yarn publish"
   },
   "devDependencies": {

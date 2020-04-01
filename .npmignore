@@ -3,6 +3,12 @@
 /bin
 /src
 
+.editorconfig
+.gitattributes
+babel.config.js
+tsconfig.declaration.json
+tsconfig.json
+
 Thumbs.db
 .DS_Store
 .DS_Store?

@@ -75,4 +75,4 @@ Patch level reflects updates to `emotion-sanitize`.
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](LICENSE.md)

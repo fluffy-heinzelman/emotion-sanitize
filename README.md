@@ -1,5 +1,8 @@
 # emotion-sanitize
 
+[![npm version](https://img.shields.io/npm/v/emotion-sanitize?style=flat-square)](https://www.npmjs.com/package/emotion-sanitize)
+![license](https://img.shields.io/npm/l/emotion-sanitize?style=flat-square)
+
 [Sanitize.css](https://github.com/csstools/sanitize.css/) ready to be used with [Emotion](https://emotion.sh/) CSS-in-JS API.
 
 If you are wondering what the exact difference between [Normalize.css](https://github.com/necolas/normalize.css) and [Sanitize.css](https://github.com/csstools/sanitize.css/) is, you might find this [comparison](https://www.diffchecker.com/46LGdaQh) helpful.

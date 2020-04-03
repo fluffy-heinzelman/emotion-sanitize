@@ -1,6 +1,8 @@
 # emotion-sanitize
 
 [![npm version](https://img.shields.io/npm/v/emotion-sanitize?style=flat-square)](https://www.npmjs.com/package/emotion-sanitize)
+[![total downloads](https://img.shields.io/npm/dt/emotion-sanitize?style=flat-square)](https://www.npmjs.com/package/emotion-sanitize)
+[![monthly downloads](https://img.shields.io/npm/dm/emotion-sanitize?style=flat-square)](https://www.npmjs.com/package/emotion-sanitize)
 [![license](https://img.shields.io/npm/l/emotion-sanitize?style=flat-square)](LICENSE.md)
 
 [Sanitize.css](https://github.com/csstools/sanitize.css/) ready to be used with [Emotion](https://emotion.sh/) CSS-in-JS API.

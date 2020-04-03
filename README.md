@@ -4,6 +4,11 @@
 
 If you are wondering what the exact difference between [Normalize.css](https://github.com/necolas/normalize.css) and [Sanitize.css](https://github.com/csstools/sanitize.css/) is, you might find this [comparison](https://www.diffchecker.com/46LGdaQh) helpful.
 
+For Normalize.css and Eric Meyer's Reset.css give these packages a try:
+- [emotion-normalize](https://github.com/infinum/emotion-normalize)
+- [emotion-reset](https://github.com/Sayegh7/emotion-reset)
+
+
 ## Installation
 
 ```sh
@@ -27,7 +32,7 @@ import { SanitizeCSS } from 'emotion-sanitize';
 
 const App = () => (
   <React.Fragment>
-    <SanitizeCSS sanitize typography />
+    <SanitizeCSS sanitize typography forms />
   </React.Fragment>
 );
 

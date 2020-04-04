@@ -7,6 +7,9 @@
   "types": "build/index.d.ts",
   "repository": "git@gitlab.com:fluffy-heinzelman/emotion-sanitize.git",
   "homepage": "https://gitlab.com/fluffy-heinzelman/emotion-sanitize",
+  "bugs": {
+    "url": "https://gitlab.com/fluffy-heinzelman/emotion-sanitize/-/issues"
+  },
   "author": "Micha Meyer <heinzelman.code@gmail.com>",
   "license": "MIT",
   "private": false,

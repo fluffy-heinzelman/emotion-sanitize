@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 export const page = css`
     html {
@@ -9,14 +9,5 @@ export const page = css`
         html {
             padding: 1em calc(50% - 16em);
         }
-    }
-
-    iframe,
-    img,
-    input,
-    select,
-    textarea {
-        height: auto;
-        max-width: 100%;
     }
 `;

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-export const sanitize = css`
+export const evergreen = css`
     *,
     ::before,
     ::after {
@@ -16,12 +16,11 @@ export const sanitize = css`
     html {
         cursor: default;
         line-height: 1.5;
+        overflow-wrap: anywhere;
         -moz-tab-size: 4;
         tab-size: 4;
         -webkit-tap-highlight-color: transparent;
-        -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
-        word-break: break-word;
     }
 
     body {
@@ -41,26 +40,14 @@ export const sanitize = css`
         margin: 0;
     }
 
-    ol ol,
-    ol ul,
-    ul ol,
-    ul ul {
-        margin: 0;
-    }
-
     hr {
         color: inherit;
         height: 0;
-        overflow: visible;
-    }
-
-    main {
-        display: block;
     }
 
     nav ol,
     nav ul {
-        list-style: none;
+        list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
         padding: 0;
     }
 
@@ -72,11 +59,6 @@ export const sanitize = css`
         font-family: monospace, monospace;
         font-size: 1em;
         overflow: auto;
-        -ms-overflow-style: scrollbar;
-    }
-
-    a {
-        background-color: transparent;
     }
 
     abbr[title] {
@@ -109,11 +91,6 @@ export const sanitize = css`
         vertical-align: middle;
     }
 
-    audio,
-    video {
-        display: inline-block;
-    }
-
     audio:not([controls]) {
         display: none;
         height: 0;
@@ -123,16 +100,8 @@ export const sanitize = css`
         border-style: none;
     }
 
-    img {
-        border-style: none;
-    }
-
     svg:not([fill]) {
         fill: currentColor;
-    }
-
-    svg:not(:root) {
-        overflow: hidden;
     }
 
     table {
@@ -148,7 +117,6 @@ export const sanitize = css`
     }
 
     button {
-        overflow: visible;
         text-transform: none;
     }
 
@@ -164,19 +132,7 @@ export const sanitize = css`
         padding: 0.35em 0.75em 0.625em;
     }
 
-    input {
-        overflow: visible;
-    }
-
-    legend {
-        color: inherit;
-        display: table;
-        max-width: 100%;
-        white-space: normal;
-    }
-
     progress {
-        display: inline-block;
         vertical-align: baseline;
     }
 
@@ -186,14 +142,7 @@ export const sanitize = css`
 
     textarea {
         margin: 0;
-        overflow: auto;
         resize: vertical;
-        resize: block;
-    }
-
-    [type="checkbox"],
-    [type="radio"] {
-        padding: 0;
     }
 
     [type="search"] {
@@ -233,15 +182,10 @@ export const sanitize = css`
         box-shadow: none;
     }
 
-    details {
-        display: block;
-    }
-
     dialog {
         background-color: white;
         border: solid;
         color: black;
-        display: block;
         height: -moz-fit-content;
         height: -webkit-fit-content;
         height: fit-content;
@@ -261,30 +205,6 @@ export const sanitize = css`
 
     summary {
         display: list-item;
-    }
-
-    canvas {
-        display: inline-block;
-    }
-
-    template {
-        display: none;
-    }
-
-    a,
-    area,
-    button,
-    input,
-    label,
-    select,
-    summary,
-    textarea,
-    [tabindex] {
-        -ms-touch-action: manipulation;
-    }
-
-    [hidden] {
-        display: none;
     }
 
     [aria-busy="true"] {

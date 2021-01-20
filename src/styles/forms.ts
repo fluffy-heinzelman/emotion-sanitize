@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 export const forms = css`
     button,
@@ -23,6 +23,12 @@ export const forms = css`
 
     select:not([multiple]):not([size]) {
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
+    }
+
+    [type="color"],
+    [type="range"] {
+        border-width: 0;
+        padding: 0;
     }
 
     ::-ms-expand {

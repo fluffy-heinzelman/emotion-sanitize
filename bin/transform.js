@@ -4,6 +4,7 @@ const { resolve } = require('path');
 const { Transform } = require('stream');
 const fs = require('fs');
 const beautify = require('cssbeautify');
+const camelCase = require('lodash/camelCase');
 
 const srcDir = resolve(__dirname, '../node_modules/sanitize.css/');
 const destDir = resolve(__dirname, '../src/styles/');
@@ -19,8 +20,8 @@ const transform = (name) => new Transform({
         css = beautify(css)
             .replace(/^(?!\s*$)/gm, ' '.repeat(4));
 
-        let ts = 'import { css } from \'@emotion/core\';\n\n';
-        ts += `export const ${name} = css\`\n`;
+        let ts = 'import { css } from \'@emotion/react\';\n\n';
+        ts += `export const ${camelCase(name)} = css\`\n`;
         ts += `${css}\n`;
         ts += '\`;\n';
 
@@ -40,10 +41,20 @@ const transformFile = (name, src, dest) => new Promise((resolve, reject) => {
         .pipe(ws);
 });
 
-const transforms = ['forms' , 'page', 'sanitize', 'typography'].map((file) => transformFile(
+const cssFileNames = [
+    'assets',
+    'evergreen',
+    'forms',
+    'page',
+    'reduce-motion',
+    'sanitize',
+    'typography'
+];
+
+const transforms = cssFileNames.map((file) => transformFile(
     file,
     resolve(srcDir, `${file}.css`),
-    resolve(destDir, `${file}.ts`)
+    resolve(destDir, `${camelCase(file)}.ts`)
 ));
 
 Promise

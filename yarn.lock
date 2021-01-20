@@ -2198,10 +2198,10 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-sanitize.css@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-11.0.0.tgz#29bb394c0543616f31cd8c58fcba8323a60e2ef6"
-  integrity sha512-Ox0X2lk0kOGeODJgT9S9HFv0j5Cz89ir9ILylj62/vejHPdMmahmetfocoQwyiAnseeXyDa+KIbO6ZQJe5n2Lg==
+sanitize.css@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-12.0.0.tgz#5fa4ece10330b8358c594d5f0250c054ff20776c"
+  integrity sha512-WtPSit2lR9FdrTNeSHPEHBbz3ncAO8U4e1rWxWUYzXu4Jwj7S1jNL/CHSXA3XRYA19HMG/jbbYnwWJOyaEM8Vw==
 
 semver@7.0.0:
   version "7.0.0"

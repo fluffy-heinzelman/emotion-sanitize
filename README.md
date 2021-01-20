@@ -37,7 +37,7 @@ import { SanitizeCSS } from 'emotion-sanitize';
 
 const App = () => (
   <React.Fragment>
-    <SanitizeCSS sanitize typography forms />
+    <SanitizeCSS assets sanitize typography forms />
   </React.Fragment>
 );
 
@@ -46,8 +46,11 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 
 Component prop | Required | Type | Default value | Description
 -------------- | -------- | ---- | ------------- | -----------
+`assets` | no | boolean | `false` | Include `assets.css` global styles
+`evergreen` | no | boolean | `false` | Include `evergreen.css` global styles
 `forms` | no | boolean | `false` | Include `forms.css` global styles
 `page` | no | boolean | `false` | Include `page.css` global styles
+`reduceMotion` | no | boolean | `false` | Include `reduce-motion.css` global styles
 `sanitize` | no | boolean | `true` | Include `sanitize.css` global styles
 `typography` | no | boolean | `false` | Include `typography.css` global styles
 
@@ -57,12 +60,13 @@ Component prop | Required | Type | Default value | Description
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Global, css } from '@emotion/core';
-import { forms, page, sanitize, typography } from 'emotion-sanitize';
+import { assets, forms, page, sanitize, typography } from 'emotion-sanitize';
 
 const App = () => (
   <React.Fragment>
     <Global 
         styles={css`
+            ${assets}
             ${sanitize}
             ${forms}
             ${page}

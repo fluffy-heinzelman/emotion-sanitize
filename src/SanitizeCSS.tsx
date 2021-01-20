@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, SerializedStyles, Global } from '@emotion/core';
+import { jsx, css, SerializedStyles, Global } from '@emotion/react';
 import React, { useMemo } from 'react';
 
 import {

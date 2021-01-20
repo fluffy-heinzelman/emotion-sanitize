@@ -2224,10 +2224,10 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-sanitize.css@12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-12.0.0.tgz#5fa4ece10330b8358c594d5f0250c054ff20776c"
-  integrity sha512-WtPSit2lR9FdrTNeSHPEHBbz3ncAO8U4e1rWxWUYzXu4Jwj7S1jNL/CHSXA3XRYA19HMG/jbbYnwWJOyaEM8Vw==
+sanitize.css@12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-12.0.1.tgz#f20369357557ba2b41d7278eeb3ea691a3bee514"
+  integrity sha512-QbusSBnWHaRBZeTxsJyknwI0q+q6m1NtLBmB76JfW/rdVN7Ws6Zz70w65+430/ouVcdNVT3qwrDgrM6PaYyRtw==
 
 semver@7.0.0:
   version "7.0.0"

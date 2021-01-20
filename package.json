@@ -30,7 +30,7 @@
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --extensions '.ts,.tsx' --out-dir ./build",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --extensions '.ts,.tsx' --out-dir ./build/esm",
     "postbuild": "yarn run type:declaration",
-    "preversion": "yarn run build && yarn run type:check",
+    "preversion": "yarn run transform && yarn run build && yarn run type:check",
     "postversion": "git push origin master --tags && yarn publish --non-interactive",
     "type:check": "tsc",
     "type:declaration": "tsc -p ./tsconfig.declaration.json"
@@ -49,7 +49,7 @@
     "lodash-es": "^4.17.20",
     "react": "^16.13.1",
     "rimraf": "^3.0.2",
-    "sanitize.css": "12.0.0",
+    "sanitize.css": "12.0.1",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {

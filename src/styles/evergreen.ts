@@ -121,9 +121,9 @@ export const evergreen = css`
     }
 
     button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
+    [type="button" i],
+    [type="reset" i],
+    [type="submit" i] {
         -webkit-appearance: button;
     }
 
@@ -145,7 +145,7 @@ export const evergreen = css`
         resize: vertical;
     }
 
-    [type="search"] {
+    [type="search" i] {
         -webkit-appearance: textfield;
         outline-offset: -2px;
     }
@@ -207,7 +207,7 @@ export const evergreen = css`
         display: list-item;
     }
 
-    [aria-busy="true"] {
+    [aria-busy="true" i] {
         cursor: progress;
     }
 
@@ -215,16 +215,16 @@ export const evergreen = css`
         cursor: pointer;
     }
 
-    [aria-disabled="true"],
+    [aria-disabled="true" i],
     [disabled] {
         cursor: not-allowed;
     }
 
-    [aria-hidden="false"][hidden] {
+    [aria-hidden="false" i][hidden] {
         display: initial;
     }
 
-    [aria-hidden="false"][hidden]:not(:focus) {
+    [aria-hidden="false" i][hidden]:not(:focus) {
         clip: rect(0, 0, 0, 0);
         position: absolute;
     }

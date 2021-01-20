@@ -27,7 +27,7 @@ npm install emotion-sanitize --save
 
 ## Emotion
 
-Since `emotion-sanitize` version `12.0.0`, we have a peer dependency to `@emotion/react` version `11.x`.
+Since `emotion-sanitize` version `12.0.0`, we have a peer dependency to `@emotion/react` version `>= 11.x`.
 
 For earlier versions of `emotion-sanitize`, use `@emotion/core` version `10.x`.
 

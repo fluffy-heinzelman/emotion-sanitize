@@ -13,7 +13,6 @@ For Normalize.css and Eric Meyer's Reset.css give these packages a try:
 - [emotion-normalize](https://github.com/infinum/emotion-normalize)
 - [emotion-reset](https://github.com/Sayegh7/emotion-reset)
 
-
 ## Installation
 
 ```sh
@@ -25,6 +24,12 @@ or
 ```sh
 npm install emotion-sanitize --save
 ```
+
+## Emotion
+
+Since `emotion-sanitize` version `12.0.0`, we have a peer dependency to `@emotion/react` version `11.x`.
+
+For earlier versions of `emotion-sanitize`, use `@emotion/core` version `10.x`.
 
 ## Usage
 

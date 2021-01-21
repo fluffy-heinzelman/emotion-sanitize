@@ -6,6 +6,7 @@ import {
     assets as assetsCSS,
     evergreen as evergreenCSS,
     forms as formsCSS,
+    formsEvergreen as formsEvergreenCSS,
     page as pageCSS,
     reduceMotion as reduceMotionCSS,
     sanitize as sanitizeCSS,
@@ -16,6 +17,7 @@ export interface SanitizeCSSProps {
     assets?: boolean;
     evergreen?: boolean;
     forms?: boolean;
+    formsEvergreen?: boolean;
     page?: boolean;
     reduceMotion?: boolean;
     sanitize?: boolean;
@@ -23,11 +25,12 @@ export interface SanitizeCSSProps {
 }
 
 const createStyle = (props: Required<SanitizeCSSProps>): SerializedStyles => {
-    const { assets, evergreen, forms, page, reduceMotion, sanitize, typography } = props;
+    const { assets, evergreen, forms, formsEvergreen, page, reduceMotion, sanitize, typography } = props;
     return css`
         ${assets ? assetsCSS : ''}
         ${evergreen ? evergreenCSS : ''}
         ${forms ? formsCSS : ''}
+        ${formsEvergreen ? formsEvergreenCSS : ''}
         ${page ? pageCSS : ''}
         ${reduceMotion ? reduceMotionCSS : ''}
         ${sanitize ? sanitizeCSS : ''}
@@ -39,6 +42,7 @@ const SanitizeCSS = ({
     assets = false,
     evergreen = false,
     forms = false,
+    formsEvergreen = false,
     page = false,
     reduceMotion = false,
     sanitize = true,
@@ -49,12 +53,22 @@ const SanitizeCSS = ({
             assets,
             evergreen,
             forms,
+            formsEvergreen,
             page,
             reduceMotion,
             sanitize,
             typography
         }),
-        [forms, page, sanitize, typography]
+        [
+            assets,
+            evergreen,
+            forms,
+            formsEvergreen,
+            page,
+            reduceMotion,
+            sanitize,
+            typography
+        ]
     );
 
     return <Global styles={style} />;

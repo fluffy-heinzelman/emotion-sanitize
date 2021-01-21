@@ -46,6 +46,7 @@ const cssFileNames = [
     'assets',
     'evergreen',
     'forms',
+    'forms.evergreen',
     'page',
     'reduce-motion',
     'sanitize',

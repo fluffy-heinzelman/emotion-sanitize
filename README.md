@@ -54,6 +54,7 @@ Component prop | Required | Type | Default value | Description
 `assets` | no | boolean | `false` | Include `assets.css` global styles
 `evergreen` | no | boolean | `false` | Include `evergreen.css` global styles
 `forms` | no | boolean | `false` | Include `forms.css` global styles
+`formsEvergreen` | no | boolean | `false` | Include `forms.evergreen.css` global styles
 `page` | no | boolean | `false` | Include `page.css` global styles
 `reduceMotion` | no | boolean | `false` | Include `reduce-motion.css` global styles
 `sanitize` | no | boolean | `true` | Include `sanitize.css` global styles

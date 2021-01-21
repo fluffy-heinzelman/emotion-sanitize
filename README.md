@@ -42,7 +42,7 @@ import { SanitizeCSS } from 'emotion-sanitize';
 
 const App = () => (
   <React.Fragment>
-    <SanitizeCSS assets sanitize typography forms />
+    <SanitizeCSS assets forms sanitize typography />
   </React.Fragment>
 );
 
@@ -65,16 +65,15 @@ Component prop | Required | Type | Default value | Description
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Global, css } from '@emotion/core';
-import { assets, forms, page, sanitize, typography } from 'emotion-sanitize';
+import { assets, forms, sanitize, typography } from 'emotion-sanitize';
 
 const App = () => (
   <React.Fragment>
     <Global 
         styles={css`
             ${assets}
-            ${sanitize}
             ${forms}
-            ${page}
+            ${sanitize}
             ${typography}
 
             // your own global styles here

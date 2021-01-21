@@ -52,7 +52,7 @@ export const evergreen = css`
     }
 
     nav li::before {
-        content: "\200B";
+        content: "\\200B";
     }
 
     pre {

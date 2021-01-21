@@ -65,7 +65,7 @@ export const sanitize = css`
     }
 
     nav li::before {
-        content: "\200B";
+        content: "\\200B";
     }
 
     pre {

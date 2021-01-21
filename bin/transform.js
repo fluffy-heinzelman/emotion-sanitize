@@ -15,7 +15,8 @@ const transform = (name) => new Transform({
             .toString()
             .replace(/\/\*[\s\S]*?\*\/|([^:]|^)\/\/.*$/gm, '')
             .replace(/^\s*\n/gm, '')
-            .replace(/\s+$/gm, '');
+            .replace(/\s+$/gm, '')
+            .replace(/\\/gm, '\\\\');
 
         css = beautify(css)
             .replace(/^(?!\s*$)/gm, ' '.repeat(4));

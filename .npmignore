@@ -12,6 +12,7 @@ tsconfig.json
 Thumbs.db
 .DS_Store
 .DS_Store?
+notes.md
 
 npm-debug.log*
 yarn-debug.log*
